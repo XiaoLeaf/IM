@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html style="height: 100vh; touch-action: pan-y;" lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-title" content="IM">
+		<!-- 图标  .ico类型文件 -->
+		<link rel="apple-touch-icon" href="http://81.69.39.207:8011/favicon.ico">
+		<!-- 图标路径 -->
+		<link rel="apple-touch-icon-precomposed" sizes="300x300" href="./static/images/logo.png">
+		<!-- IOS 主屏幕应用全屏 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- 安卓 主屏幕应用全屏 -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="msapplication-TileColor" content="#000000">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/2048x2732.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1668x2388.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1536x2048.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1668x2224.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1620x2160.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1284x2778.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1170x2532.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1125x2436.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1242x2688.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/828x1792.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/1242x2208.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/750x1334.png">
+		<link rel="apple-touch-startup-image"
+			media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+			href="https://oss.cheinapp.com/ios/640x1136.png">
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<!-- 正式发布的时候使用，开发期间不启用。↓ -->
+		<script src="/static/common/js/touch-emulator.js"></script>
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js">
+		</script>
+		<script>
+			window.zxpostMessage = uni.postMessage
+			TouchEmulator();
+		</script>
+		<style>
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+		<!-- 正式发布的时候使用，开发期间不启用。↑ -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+			})
+		</script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+		<!-- 测试线统计代码 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?bb17d251c8e981cb308dec5cec0a925e";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<!-- 正式线统计代码 -->
+		<!-- <script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?9366559edec62544b22a51b65083fc44";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script> -->
+	</head>
+	<body>
+		<!-- 该文件为 H5 平台的模板 HTML，并非应用入口。 -->
+		<!-- 请勿在此文件编写页面代码或直接运行此文件。 -->
+		<!-- 详见文档：https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+		<noscript>
+			<strong>本站点必须要开启JavaScript才能运行</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<script>
+			/*BAIDU_STAT*/
+		</script>
+	</body>
+</html>

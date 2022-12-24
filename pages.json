@@ -1,0 +1,88 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false,
+			"navigationStyle": "custom",
+			"disableScroll": true,
+			"navigationBarTextStyle": "black",
+			"navigationBarBackgroundColor": "#fff"
+		}
+	}],
+	"subPackages": [{
+			"root": "core",
+			"pages": [{
+				"path": "pages/webview/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "pages/article/index",
+				"style": {
+					"navigationBarTitleText": "加载中...",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fff",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "pages/article/detail",
+				"style": {
+					"navigationBarTitleText": "加载中...",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fff",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "pages/article/page",
+				"style": {
+					"navigationBarTitleText": "加载中...",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#fff",
+					"navigationStyle": "custom"
+				}
+			}]
+		},
+		{
+			"root": "login",
+			"pages": [{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			}]
+		},
+		{
+			"root": "im",
+			"pages": [{
+				"path": "online",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "chat",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "7-rabbit",
+		"navigationBarTextStyle": "white",
+		"rpxCalcBaseDeviceWidth": 640,
+		"rpxCalcMaxDeviceWidth": 960,
+		"rpxCalcIncludeWidth": 750
+	}
+}

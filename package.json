@@ -1,0 +1,16 @@
+{
+	"id": "IM",
+	"displayName": "",
+	"version": "1.0.0",
+	"description": "",
+	"dcloudext": {
+		"category": [
+			"前端组件",
+			"通用组件"
+		]
+	},
+	"dependencies": {
+		"jweixin-module": "^1.6.0",
+		"uni-luck-draw": "^1.3.9"
+	}
+}
